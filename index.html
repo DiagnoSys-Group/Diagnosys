@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiagnoSys Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="app-container">
+        <div class="background-overlay"></div>
+
+        <section id="home-screen" class="screen active">
+            <div class="logo-area">
+                <div class="logo-icon-text">
+                    <img src="Logo.png" alt="DiagnoSys Healthcare Logo: A blue heart with a medical cross" class="logo-icon">
+                    <span class="logo-text">DiagnoSys</span>
+                </div>
+            </div>
+
+            <div class="nav-buttons">
+                <div class="nav-card" id="btn-doctors-profile">
+                    <i class="fas fa-user-md card-icon"></i>
+                    <span class="card-text">Doctor's Profile</span>
+                </div>
+                <div class="nav-card" id="btn-database-access">
+                    <i class="fas fa-database card-icon"></i>
+                    <span class="card-text">Database Access</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="doctors-profile-screen" class="screen">
+            <header>
+                <div class="logo-icon-text">
+                    <span class="logo-text small-text">DiagnoSys</span>
+                </div>
+                <h1 class="screen-title">Doctor's Profile</h1>
+            </header>
+            <div class="search-box">
+                <input type="text" id="doctor-search-input" placeholder="Search">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="data-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th>CONTACT</th>
+                            <th>SCHEDULE</th>
+                            <th>AVAILABILITY</th>
+                        </tr>
+                    </thead>
+                    <tbody id="doctors-table-body">
+                        </tbody>
+                </table>
+            </div>
+            <button class="back-btn" id="btn-back-doctors">Back</button>
+        </section>
+
+        <section id="database-access-screen" class="screen">
+            <header>
+                <div class="logo-icon-text">
+                    <span class="logo-text small-text">DiagnoSys</span>
+                </div>
+                <h1 class="screen-title">Database Access</h1>
+            </header>
+
+            <div class="search-box">
+                <input type="text" id="database-search-input" placeholder="Search">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <div class="data-container wide-data-container">
+                <table class="data-table wide-table">
+                    <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th>AGE</th>
+                            <th>GENDER</th>
+                            <th>DATE OF BIRTH</th>
+                            <th>CONTACT</th>
+                            <th>SYSTOLIC BP</th>
+                            <th>DIASTOLIC BP</th>
+                            <th>SPO2</th>
+                            <th>HEART RATE</th>
+                            <th>TEMPERATURE</th>
+                            <th>RESULTS</th>
+                            <th>DOCTOR</th>
+                        </tr>
+                    </thead>
+                    <tbody id="database-table-body">
+                        </tbody>
+                </table>
+            </div>
+
+            <button class="back-btn" id="btn-back-database">Back</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
